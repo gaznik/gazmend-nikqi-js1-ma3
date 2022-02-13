@@ -1,0 +1,29 @@
+.results {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.result {
+  margin: 1rem;
+  padding: 1rem;
+}
+
+/* Loader taken from the GitHub repo for Noroff module 3 lesson 3 */
+
+.loading {
+  border: 1em, solid #000;
+  border-top: 1em solid blue;
+  border-radius: 50%;
+  width: 4em;
+  height: 4rem;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
